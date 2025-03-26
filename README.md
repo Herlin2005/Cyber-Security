@@ -13,10 +13,6 @@ A Python tool that checks if your password has been exposed in known data breach
 - 🛡️ **Local Execution**: No password leaves your machine
 - 🎨 **Colorized Output**: Visual alerts for breached passwords
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/password-breach-checker.git
-   cd password-breach-checker
+
 
 
