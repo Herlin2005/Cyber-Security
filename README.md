@@ -1,47 +1,22 @@
-# 🛡️ Ransomware Detection System
+# 🔒 Password Breach Checker
 
-A real-time monitoring system that detects ransomware activity through filesystem analysis and network monitoring, with immediate alerting capabilities.
+A Python tool that checks if your password has been exposed in known data breaches using the Have I Been Pwned (HIBP) API.
 
-## ✨ Key Features
+![Demo](https://img.shields.io/badge/Demo-Link-blue) 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-### 🔍 Detection Capabilities
-- **Filesystem Monitoring**
-  - Real-time modification tracking using `watchdog`
-  - Entropy analysis for encrypted file detection
-  - Ransom note pattern recognition (e.g., `HOW_TO_DECRYPT.txt`)
-  - Mass file extension changes detection
+## Features
+- ✅ **Breach Detection**: Checks passwords against 613M+ breached records
+- 🔐 **Secure**: Uses k-anonymity (only sends first 5 chars of password hash)
+- 📊 **Risk Quantification**: Shows breach count if compromised
+- 🛡️ **Local Execution**: No password leaves your machine
+- 🎨 **Colorized Output**: Visual alerts for breached passwords
 
-### 🌐 Network Protection
-- Malicious IP/domain blocklist
-- Suspicious port activity monitoring
-- Outbound connection analysis
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/password-breach-checker.git
+   cd password-breach-checker
 
-### ⚡ Alert System
-- Email notifications with OAuth2 authentication
-- Local syslog integration
-- Customizable alert thresholds
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.8+
-- Gmail account (for email alerts)
-- Administrative privileges (for network monitoring)
-
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/Herlin2005/StyleAT/ransomware-detector.git
-cd ransomware-detector
-
-# Create virtual environment
-python -m venv venv
-
-# Activate environment
-# Linux/Mac:
-source venv/bin/activate
-# Windows:
-.\venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
